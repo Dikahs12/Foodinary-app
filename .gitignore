@@ -1,15 +1,40 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# ==================== DEPENDENCIES ====================
 node_modules/
+/.yarn
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.pnpm-store/
 
-# Expo
+# ==================== EXPO SPECIFIC ====================
 .expo/
 dist/
 web-build/
 expo-env.d.ts
+*.tgz
+*.tar.gz
 
-# Native
+# ==================== BUILD OUTPUTS ====================
+build/
+*.apk
+*.aab
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ==================== NATIVE FOLDERS ====================
+/ios
+/android
+/.expo
+/.gradle
+
+# ==================== NATIVE FILES ====================
 .kotlin/
 *.orig.*
 *.jks
@@ -17,27 +42,84 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+*.keystore
+Podfile.lock
 
-# Metro
+# ==================== METRO & BUNDLER ====================
 .metro-health-check*
+*.jsbundle
+*.map
+*.bundle
 
-# debug
+# ==================== DEBUG & LOGS ====================
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+logs/
 
+# ==================== OPERATING SYSTEM ====================
 # macOS
 .DS_Store
-*.pem
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# local env files
-.env*.local
+# Windows
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
 
-# typescript
+# Linux
+*~
+
+# ==================== ENVIRONMENT VARIABLES ====================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ==================== IDE & EDITOR ====================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Xcode
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+
+# Android Studio
+*.iml
+.gradle/
+local.properties
+
+# ==================== TYPESCRIPT ====================
 *.tsbuildinfo
 
-app-example
+# ==================== TESTING ====================
+/coverage
+/.nyc_output
 
-# generated native folders
-/ios
-/android
+# ==================== MISC ====================
+app-example
+*.pem
+*.backup
+*.tmp
+*.temp
+
+# ==================== EXPO UPDATES ====================
+.expo-shared/
+.expo-webpack-*
