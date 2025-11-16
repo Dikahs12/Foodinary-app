@@ -1,50 +1,45 @@
-# Welcome to your Expo app 👋
+# 🍳 FOODINARY - Aplikasi Kreasi Resep Personal
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center">
 
-## Get started
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-1. Install dependencies
+Aplikasi mobile untuk membuat, menyimpan, dan mengelola resep masakan kreasi sendiri.
 
-   ```bash
-   npm install
-   ```
+</div>
 
-2. Start the app
+## 📸 Screenshots
 
-   ```bash
-   npx expo start
-   ```
+| Home Screen | Kelola Resep | Detail Resep |
+|-------------|--------------|--------------|
+| ![Home](screenshots/home.jpg) | ![Manage](screenshots/manage.jpg) | ![Detail](screenshots/detail.jpg) |
 
-In the output, you'll find options to open the app in a
+## ✨ Fitur
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- 🎨 **Buat Resep Kreasi** - Form lengkap untuk resep custom
+- 📁 **Kelola Resep** - Edit, hapus, dan organisasi resep
+- 🔍 **Pencarian Cerdas** - Cari berdasarkan nama, bahan, atau kategori
+- 🏷️ **Kategori** - Organisasi resep oleh kategori
+- 💾 **Penyimpanan Lokal** - Data tersimpan secara lokal di device
+- 📱 **Responsive** - Tampilan optimal di mobile dan web
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Instalasi & Menjalankan
 
-## Get a fresh project
+### Prerequisites
+- Node.js (versi 14 atau lebih baru)
+- npm atau yarn
+- Expo CLI
 
-When you're ready, run:
-
+### Setup Project
 ```bash
-npm run reset-project
-```
+# Clone repository
+git clone https://github.com/username/foodinary.git
+cd foodinary
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Install dependencies
+npm install
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Jalankan aplikasi
+npx expo start
